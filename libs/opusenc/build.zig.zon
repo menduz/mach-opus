@@ -1,0 +1,20 @@
+.{
+    .name = .opusfile,
+    .version = "0.0.0",
+    .fingerprint = 0xc8c752347fd35922,
+    .paths = .{
+        "include",
+        "src",
+        "build.zig",
+        "build.zig.zon",
+        "COPYING",
+        "README.md",
+        "update.sh",
+        "verify.sh",
+    },
+    .dependencies = .{
+        .opus = .{
+            .path = "../opus",
+        },
+    },
+}

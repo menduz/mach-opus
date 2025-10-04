@@ -1,6 +1,7 @@
 .{
-    .name = "mach-opus",
+    .name = .mach_opus,
     .version = "0.0.0",
+    .fingerprint = 0x1f2e731d9af965d2,
     .paths = .{
         "examples",
         "src",
@@ -12,17 +13,8 @@
         "README.md",
     },
     .dependencies = .{
-        .opusfile = .{
-            .url = "https://pkg.machengine.org/opusfile/3eb6f231cb7bfed63d68e5b6bfdd5b08adb64223.tar.gz",
-            .hash = "12202b922b88245c86d7a28ce31f43c62b994aebec5dbaec0ec8d703093e07bdc334",
-        },
-        .opusenc = .{
-            .url = "https://pkg.machengine.org/opusenc/456cbba13168cc5b999e19256bc78e977ce18fc8.tar.gz",
-            .hash = "1220a330daee6fe10a02a6b981903877b2fab74afb64068a66f1f8a8135096a8e08a",
-        },
-        .linux_audio_headers = .{
-            .url = "https://pkg.machengine.org/linux-audio-headers/81f1f13828a8b62467200ba2a0b0d911c4d089a7.tar.gz",
-            .hash = "12209e63e7efddd85cca44cbb13d20ef30c72ff4c409372dd75a128a354b27e9dc4c",
-        },
+        .opusfile = .{ .path = "libs/opusfile" },
+        .opusenc = .{ .path = "libs/opusenc" },
+        .linux_audio_headers = .{ .path = "libs/linux_audio_headers" },
     },
 }
