@@ -11,6 +11,7 @@
         "LICENSE-APACHE",
         "LICENSE-MIT",
         "README.md",
+        "libs",
     },
     .dependencies = .{
         .opusfile = .{ .path = "libs/opusfile" },
